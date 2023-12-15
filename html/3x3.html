@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <script type="text/javascript" src="..\js\3x3.js"></script>
+    <link rel="stylesheet" href="..\css\table.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Jogo da Velha</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="ui">
+            <div class="uiTabela">
+                <table id="tabuleiro">
+                    <tr>
+                        <td id="c00" onclick="clicarCelula(0, 0)"></td>
+                        <td id="c01" onclick="clicarCelula(0, 1)"></td>
+                        <td id="c02" onclick="clicarCelula(0, 2)"></td>
+                    </tr>
+                    <tr>
+                        <td id="c10" onclick="clicarCelula(1, 0)"></td>
+                        <td id="c11" onclick="clicarCelula(1, 1)"></td>
+                        <td id="c12" onclick="clicarCelula(1, 2)"></td>
+                    </tr>
+                    <tr>
+                        <td id="c20" onclick="clicarCelula(2, 0)"></td>
+                        <td id="c21" onclick="clicarCelula(2, 1)"></td>
+                        <td id="c22" onclick="clicarCelula(2, 2)"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="uiModo">
+                <div class="uiSeletorModo">
+                    <label for="modoJogo">Modo de jogo:</label>
+                    <input type="radio" id="ia" name="modoJogo" value="ia">
+                    <label for="ia">Bot</label>
+                    <input type="radio" id="doisJogadores" name="modoJogo" value="doisJogadores">
+                    <label for="doisJogadores">1x1</label>
+                </div>
+                <div class="uiBotoes">
+                    <button id="modoSubmit" onclick="modoJogoSubmit()">Iniciar Jogo</button>
+                    <button id="reiniciar" onclick="reiniciarJogo()">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
