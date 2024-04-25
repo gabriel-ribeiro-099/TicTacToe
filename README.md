@@ -1,1 +1,1 @@
-Projeto de site para disciplina de Web1, nele é possível jogar jogo da velha. Existem dois modos de jogo, um contra um ou um contra bot.
+On this website, the user will be able to play TicTacToe against other players or against a bot, which chooses random spaces to play. This was my first contact with JavaScript, I know it's not the most optimized way of doing it, but since it was my first, I'm happy about it.
